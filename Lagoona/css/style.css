@@ -1,0 +1,947 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #F1F1F1;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  height: 54px;
+  margin-top: 30px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__tel {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;text-decoration: none;
+}
+
+.header__cabinet {
+  margin-left: 502px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__cabinet__enter {
+  margin-left: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+/* NAV */
+
+.nav__content {
+  height: 70px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.nav__content__list {
+  display: flex;
+  padding: 0;
+  margin-right: 74px;
+  list-style: none;
+}
+
+.nav__content__list__elem:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav__content__list__elem__a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.nav__content__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav__content__btn__to_contacts {
+  width: 177px;
+}
+
+/* SPECIAL */
+
+.special__content {
+  margin-top: 70px;
+}
+
+.special__head {
+  margin: 0 0 20px 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.special__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 540px;
+}
+
+.special__cards__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.special__cards__left__pic1 {
+  padding: 40px 45px;
+  width: 483px;
+  height: 178px;
+  background-image: url('../img/spec_pic1.png');
+  border-radius: 15px;
+}
+
+.special__cards__left__pic1__head {
+  width: 420px;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.special__cards__left__pic1__price {
+  margin: 15px 0 47px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.special__cards__left__pic1__more {
+  display: flex;
+}
+
+.special__cards__left__pic__more__a,
+.special__cards__right__pic__more__a {
+  padding-right: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
+  text-decoration: none;
+}
+
+.special__cards__left__pic2 {
+  padding: 40px 45px;
+  width: 483px;
+  height: 178px;
+  background-image: url('../img/spec_pic2.png');
+  border-radius: 15px;
+}
+
+.special__cards__left__pic2__head {
+  width: 420px;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.special__cards__left__pic2__price {
+  margin: 15px 0 47px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.special__cards__left__pic2__more {
+  display: flex;
+}
+
+.special__cards__right {
+  padding: 40px 45px;
+  width: 483px;
+  height: 460px;
+  background-image: url('../img/spec_pic3.png');
+}
+
+.special__cards__right__pic3__head {
+  width: 300px;
+  margin: 172px 0 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.special__cards__right__pic3__price {
+  margin: 15px 0 47px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.special__cards__right__pic3__more {
+  display: flex;
+}
+
+/* ABOUT */
+
+.about__content {
+  height: auto;
+  margin-top: 70px;
+}
+
+.about__head {
+  margin: 0 0 20px 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.about__text {
+  margin: 0;
+  width: 870px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* MENU */
+
+.menu__content {
+  margin-top: 70px;
+}
+
+.menu__head {
+  margin: 0 0 20px 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.menu__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.menu__cards__card {
+  width: 573px;
+  min-height: 330px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.menu__cards__card__text {
+  padding: 26px 0 35px 45px;
+}
+
+.menu__cards__card__text__name {
+  display: flex;
+  align-items: center;
+}
+
+.menu__cards__card__text__name__a {
+  margin-right: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.menu__cards__card__text__p {
+  width: 410px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* BENEFITS */
+
+.benefits__content {
+  margin-top: 70px;
+}
+
+.benefits__head {
+  margin: 0 0 20px 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.benefits__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 22px;
+  row-gap: 22px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.benefits__cards__card {
+  width: 186px;
+  min-height: 204px;
+  padding: 40px 45px 32px 45px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.benefits__cards__card__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* PLACE */
+
+.place__content {
+  margin-top: 70px;
+}
+
+.place__head {
+  margin: 0 0 20px 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.place__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.place__cards__card {
+  width: 374px;
+  min-height: 440px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.place__cards__card__info {
+  padding: 32px 45px 45px;
+}
+
+.place__cards__card__info__main {
+  display: flex;
+  align-items: flex-end;
+}
+
+.place__cards__card__info__main__1 {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.place__cards__card__info__main__2 {
+  margin: 0 8px 0 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.place__cards__card__info__main__3 {
+  margin: 0 47px 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.place__cards__card__info__main__star {
+  margin: 0 6px 0 0;
+}
+
+.place__cards__card__info__name {
+  margin: 16px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.place__cards__card__info__place {
+  margin: 16px 0 20px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.place__cards__card__info__rooms {
+  width: 100px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.place__cards__card__last {
+  position: relative;
+  background-image: url('../img/place_9.png');
+  background-size: cover;
+}
+
+.place__cards__card__all {
+  position: absolute;
+  top: 373px;
+  left: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.place__cards__card__all__a {
+  padding-right: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+}
+
+.place__cards__card__all__arrow path {
+  stroke: #FFFFFF;
+}
+
+/* TOUR */
+
+.tour__content {
+  height: 256px;
+  margin-top: 70px;
+  padding: 0 45px 0;
+  background: #E9E9E9;
+  border-radius: 15px;
+}
+
+.tour__head {
+  margin: 0 0 20px 0;
+  padding-top: 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.tour__form {
+  width: 1026px;
+  height: 46px;
+  padding: 30px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.tour__form__out__h,
+.tour__form__in__h,
+.tour__form__date__h,
+.tour__form__days__h,
+.tour__form__human__h {
+  margin: 0 0 15px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.tour__form__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108px;
+  height: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.tour__form__out__select,
+.tour__form__in__select {
+  width: 170px;
+}
+
+.tour__form__out__select,
+.tour__form__in__select,
+.tour__form__date__calendar {
+  border: none;
+}
+
+.tour__form__date__calendar,
+.tour__form__days__input,
+.tour__form__human__input {
+  width: 121px;
+}
+
+.tour__form__days__input,
+.tour__form__human__input {
+  width: 121px;
+  border: none;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+/* CONTACTS */
+
+.contacts__content {
+  margin-top: 70px;
+}
+
+.contacts__head {
+  margin: 0 0 20px 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.contacts__block {
+  width: 1080px;
+  height: 528px;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.contacts__block__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__block__text__address,
+.contacts__block__text__tel,
+.contacts__block__text__email,
+.contacts__block__text__graphic {
+  margin: 25px 0 23px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contacts__block__text__address {
+  margin-top: 0;
+}
+
+.contacts__block__text__h {
+  width: 100px;
+  margin: 0 45px 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts__block__text__address__p {
+  width: 220px;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.contacts__block__text__tel__tels {
+  width: 145px;
+}
+
+.contacts__block__text__tel__tels__a,
+.contacts__block__text__email__emails__a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.contacts__block__text__email__emails__p {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #999999;
+}
+
+.contacts__block__text__graphic__p {
+  margin: 0;
+  width: 200px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background: #E9E9E9;
+}
+
+.contacts__block__text__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 70px;
+  margin-top: 45px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer__container {
+  position: relative;
+  width: 1170px;
+  height: 341px;
+  margin-top: 40px;
+  background: #333333;
+  border-radius: 15px;
+}
+
+.footer__content {
+  padding: 45px 45px 45px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__background {
+  position: absolute;
+  left: 738px;
+  top: 112px;
+}
+
+.footer__content__info_block {
+  width: 350px;
+}
+
+.footer__content__info_block__text {
+  margin: 0 0 37px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+}
+
+.footer__content__info_block__acception {
+  margin: 3px 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.footer__content__contacts_block {
+  width: 400px;
+  margin-right: 145px;
+}
+
+.footer__content__contacts_block__address {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.footer__content__contacts_block__tel {
+  margin: 15px 0 0;
+  width: 150px;
+}
+
+.footer__content__contacts_block__tel a {
+  display: block;
+  padding: 2px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.footer__content__contacts_block__mail {
+  margin: 15px 0 0;
+  width: 145px;
+}
+
+.footer__content__contacts_block__mail a {
+  display: block;
+  padding: 2px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.footer__content__soc_block {
+  width: 25px;
+}
+
+.footer__content__soc_block svg:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+/* INTERACTIVE */
+
+.header__tel:hover,
+.nav__content__list__elem__a:hover {
+  color: #CC9933;
+}
+
+.header__tel:focus,
+.nav__content__list__elem__a:focus {
+  padding: 3px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  outline: none;
+}
+
+.header__tel:active,
+.nav__content__list__elem__a:active {
+  color: #A47312;
+  border: none;
+}
+
+.header__cabinet__enter:hover,
+.contacts__block__text__email__emails__a:hover,
+.contacts__block__text__tel__tels__a:hover {
+  color: #F0BF5F;
+}
+
+.header__cabinet:focus,
+.contacts__block__text__email__emails__a:focus,
+.contacts__block__text__tel__tels__a:focus {
+  padding: 3px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  outline: none;
+}
+
+.header__cabinet:active,
+.header__cabinet__enter:active,
+.contacts__block__text__email__emails__a:active,
+.contacts__block__text__tel__tels__a:active {
+  color: #A47312;
+  border: none;
+  padding: 0;
+}
+
+.nav__content__btn:hover,
+.place__cards__card__info__rooms:hover,
+.tour__form__search:hover,
+.contacts__block__text__btn:hover,
+.nav__content__btn:focus,
+.place__cards__card__info__rooms:focus,
+.tour__form__search:focus,
+.contacts__block__text__btn:focus {
+  border: #CC9933;
+  color: #FFFFFF;
+  background: #CC9933;
+}
+
+.nav__content__btn:active,
+.place__cards__card__info__rooms:active,
+.tour__form__search:active,
+.contacts__block__text__btn:active {
+  border: #A47312;
+  color: #FFFFFF;
+  background: #A47312;
+}
+
+.special__cards__left__pic__more__a:focus,
+.special__cards__right__pic__more__a:focus {
+  outline: none;
+}
+
+.special__cards__left__pic__more__a:active,
+.special__cards__right__pic__more__a:active {
+  color: #FFFFFF;
+}
+
+.menu__cards__card__text__name__a:active {
+  color: #A47312;
+}
+
+.footer__content__contacts_block__mail a:hover,
+.footer__content__contacts_block__tel a:hover {
+  color: #F0BF5F
+}
+
+.footer__content__contacts_block__mail a:focus,
+.footer__content__contacts_block__tel a:focus {
+  border: 1px solid #CC9933;
+  outline: none;
+}
+
+.footer__content__contacts_block__mail a:active,
+.footer__content__contacts_block__tel a:active {
+  color: #A47312;
+  border: none;
+}
+
+.footer__content__soc_block svg path:hover,
+.footer__content__soc_block svg path:focus {
+  fill: #CC9933;
+  cursor: pointer;
+}
+
+.footer__content__soc_block svg path:active {
+  fill: #A47312;
+  cursor: pointer;
+}

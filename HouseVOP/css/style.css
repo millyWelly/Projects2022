@@ -1,0 +1,266 @@
+body {
+  width: 100%;
+  margin: 0;
+  background: #242B33;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url('../img/hero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+/* NAV */
+
+.nav__content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.nav__list__element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav__list__element__a {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav__list__element__a:hover {
+  color: #D4C17F;
+}
+
+/* HERO */
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__head {
+  margin: 200px 0 0 0;
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #D4C17F;
+}
+
+.hero__scroll_btn {
+  margin-top: 100px;
+}
+
+.hero__contacts {
+  margin: 200px 0 74px 0;
+  display: flex;
+}
+
+.hero__contects__address,
+.hero__contects__tel {
+  display: flex;
+  align-items: center;
+}
+
+.hero__contects__address {
+  margin-right: 100px;
+}
+
+.hero__contacts__address__text,
+.hero__contacts__tel__text {
+  margin: 0 0 0 15px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* BENEFITS */
+
+.benefits__content {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits__list {
+  margin-top: 120px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.benefits__list__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__list__element:not(:last-child) {
+  margin-right: 70px;
+}
+
+.benefits__list__element__p {
+  margin: 53px 0 0 0;
+  text-align: center;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* KV */
+
+.kv__content {
+  margin-top: 120px;
+}
+
+.kv__head {
+  margin: 0;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
+}
+
+.kv__blocks {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.kv__blocks__block {
+  position: relative;
+  overflow: hidden;
+}
+
+.kv__blocks__block__text {
+  position: absolute;
+  left: 50px;
+  top: 248px;
+  margin: 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+/* LOOK */
+
+.look {
+  background-image: url('../img/back.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.look__head {
+  margin: 0 0 29px 0;
+  padding-top: 180px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
+}
+
+.look__block {
+  padding-bottom: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.look__block__text__p {
+  margin: 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.look__block__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.look__block__form input {
+  width: 245px;
+  height: 50px;
+  padding-left: 10px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  background-image: url('../img/Rectangle.png');
+  opacity: 0.3;
+}
+
+.look__block__form__p {
+  margin: 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #E7E7E7;
+}
+
+.look__block__form__btn {
+  width: 263px;
+  height: 50px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #D4C17F;
+  border: none;
+}
+.look__block__form__btn:hover {
+  cursor: pointer;
+  background: #eeda90;
+}
