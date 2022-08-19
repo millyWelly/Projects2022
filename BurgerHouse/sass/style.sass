@@ -1,0 +1,448 @@
+@import 'variables', 'mixins'
+
+body
+  width: 100%
+  margin: 0
+
+.container
+  width: 1326px
+  margin: 0 auto 0
+
+header
+  background-image: url('../img/back_1.png')
+  height: 825px
+
+.header__container
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.header__preview
+  margin-top: 50px
+  width: 1326px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.delivery_block
+  display: flex
+  align-items: center
+  &__txt
+    margin: 0 10px
+    @include header_delivery
+  &__tel
+    text-decoration: none
+    @include header_delivery
+    &:hover, &:focus, &:active
+      color: $red
+      outline: none
+    
+.nav__list
+  display: flex
+  list-style: none
+  padding: 0
+  margin: 0
+  &__element:not(:last-child)
+    margin-right: 30px
+  &__element__link
+    margin: 20px 0
+    text-decoration: none
+    font-family: 'Bebas Neue'
+    font-size: 20.9px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.2em
+    color: $brown
+    &:hover, &:focus, &:active
+      color: $red
+      outline: none
+
+.hero
+  position: absolute
+  top: 145px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  &__head
+    margin-top: 150px
+    &__p
+      width: 390px
+      text-align: center
+      margin: 0 0 0 7px
+      padding: 7px
+      font-family: 'Bebas Neue'
+      font-size: 23.7px
+      line-height: 32px
+      font-weight: 400
+      text-transform: uppercase
+      color: $brown
+      outline: 3px dashed $brown
+    &__h_1
+      @include hero__head__h(114.3px, 120px)
+      margin: 20px 0
+    &__h_2
+      @include hero__head__h(56.5px, 61px)
+  &__sale
+    position: relative
+    width: 700px
+    height: 530px
+    &__burger
+      position: absolute
+      top: 200px
+      left: 200px
+      z-index: 10
+    &__drink
+      position: absolute
+      top: 40px
+      left: 500px
+    &__fri
+      position: absolute
+      top: 120px
+      left: 80px
+    &__price
+      position: absolute
+      z-index: 20
+      top: 430px
+      left: 120px
+      &__block
+        position: relative
+      &__red_ellipse
+        position: absolute
+        z-index: 25
+      &__ellipse_lines
+        position: absolute
+        z-index: 30
+        top: 10px
+        left: 10px
+      &__p1
+        position: absolute
+        z-index: 30
+        top: 55px
+        left: 45px
+        @include hero__price
+      &__p2
+        position: absolute
+        z-index: 30
+        top: 68px
+        left: 102px
+        @include hero__price
+        font-size: 30.4px
+      &__p3
+        position: absolute
+        z-index: 30
+        top: 105px
+        left: 45px
+        @include hero__price
+        font-size: 33.4px
+        letter-spacing: 0.34em
+
+.menu
+  margin-top: 78px
+  display: flex
+  justify-content: space-between
+  &__left
+    position: relative
+    display: block
+    text-decoration: none
+    transition: transform .2s ease
+    &__block
+      width: 596px
+      height: 420px
+      background-image: url('../img/main_pic_1.png')
+      &__txt
+        position: absolute
+        top: 31px
+        left: 24px
+      &__try
+        @include menu__head(25px)
+      &__h
+        @include menu__head(41.7px)
+    &:hover
+      transform: scale(1.1, 1.1)
+    &:focus
+      outline: 5px solid $white
+      border-radius: 10px
+      outline-offset: -10px
+  &__right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__block_1
+      position: relative
+      transition: transform .2s ease
+      &__div
+        width: 596px
+        height: 192px
+        background-image: url('../img/main_pic_2.png')
+        &__txt
+          position: absolute
+          top: 30px
+          left: 29px
+        &__try
+          @include menu__head(25px)
+        &__h
+          @include menu__head(41.7px)
+      &:hover
+        transform: scale(1.1, 1.1)
+      &:focus
+        outline: 5px solid $white
+        border-radius: 10px
+        outline-offset: -10px
+    &__block_2
+      position: relative
+      transition: transform .2s ease
+      &__div
+        width: 596px
+        height: 192px
+        background-image: url('../img/main_pic_3.png')
+        &__txt
+          position: absolute
+          top: 30px
+          left: 29px
+        &__try
+          @include menu__head(25px)
+        &__h
+          @include menu__head(41.7px)
+      &:hover
+        transform: scale(1.1, 1.1)
+      &:focus
+        outline: 5px solid $white
+        border-radius: 10px
+        outline-offset: -10px
+        
+.choose
+  margin-top: 80px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__head
+    margin: 0
+    font-family: 'Alfa Slab One'
+    font-size: 50px
+    line-height: 37px
+    font-weight: 400
+    text-transform: uppercase
+    color: $brown
+  &__p
+    margin: 30px 0 0
+    width: 1100px
+    font-family: Montserrat
+    font-size: 16.7px
+    line-height: 29px
+    font-weight: 400
+    text-align: center
+    color: $brown
+  &__burgers
+    margin-top: 100px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__burger
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__h
+        margin: 50px 0 0
+        text-align: center
+        font-family: 'Bebas Neue'
+        font-size: 37.5px
+        line-height: 37px
+        text-transform: uppercase
+        color: $brown
+      &__description
+        width: 350px
+        margin: 23px 0 36px
+        text-align: center
+        font-family: Montserrat
+        font-size: 16.7px
+        line-height: 20px
+        font-weight: 400
+        color: $brown
+      &__order_link
+        width: 195px
+        height: 57px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $red
+        font-family: 'Alfa Slab One'
+        font-size: 16.7px
+        line-height: 37px
+        text-transform: uppercase
+        color: $white
+        letter-spacing: 3px
+        text-decoration: none
+        @include btn_animation
+
+.about
+  margin-top: 130px
+  padding: 26px
+  width: 1294px
+  height: 492px
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  background-color: #ffffff
+  box-shadow: 19px 25px 43px 0px rgba(0,0,0,0.17)
+  &__text
+    margin-left: 30px
+    &__h4
+      margin: 38px 0 0
+      font-family: 'Bebas Neue'
+      font-size: 29.2px
+      line-height: 45px
+      text-transform: uppercase
+      letter-spacing: 0.06em
+      color: #3d3d3d
+    &__h3
+      margin: 0
+      font-family: 'Alfa Slab One'
+      font-size: 41.7px
+      line-height: 45px
+      text-transform: uppercase
+      color: $brown
+    &__p
+      margin: 44px 0 0
+      width: 400px
+      font-family: Montserrat
+      font-size: 20.9px
+      line-height: 33px
+      font-weight: 400
+      color: #3d3d3d
+
+.order__width
+  position: relative
+  width: 1440px
+  height: 740px
+  margin: 0 auto 0
+.order
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__p
+    margin: 132px 0 0
+    font-family: 'Bebas Neue'
+    font-size: 29.2px
+    line-height: 45px
+    text-transform: uppercase
+    letter-spacing: 0.06em
+    color: $brown
+  &__head
+    margin: 23px 0 62px
+    font-family: 'Alfa Slab One'
+    font-size: 50px
+    line-height: 45px
+    text-transform: uppercase
+    letter-spacing: 0.06em
+    color: $brown
+  &__form
+    display: flex
+    justify-content: space-between
+    &__right
+      display: flex
+      flex-direction: column
+      &__btn
+        width: 380px
+        height: 65px
+        padding: 0
+        margin-top: 27px
+        font-family: 'Alfa Slab One'
+        font-size: 20.9px
+        line-height: 45px
+        text-transform: uppercase
+        letter-spacing: 3px
+        color: $white
+        background-color: #bf2222
+        border-radius: 5px
+        border: 1px solid #bf2222
+        @include btn_animation
+    &__left
+      display: flex
+      flex-direction: column
+      margin-right: 26px
+  &__input
+    width: 330px
+    height: 15px
+    padding: 25px
+    margin-top: 27px
+    font-family: 'Bebas Neue'
+    font-size: 20.9px
+    line-height: 45px
+    color: #3d3d3d
+    background-color: rgba(235,174,76,0.0)
+    border: 1px solid #bebebe
+    border-radius: 5px
+    &:hover
+    &:focus
+      outline: none
+      box-shadow: 3px 3px 3px 3px $brown
+    &:active
+      outline: none
+      box-shadow: 3px 3px 3px 3px $brown
+  &__burger
+    position: absolute
+    top: 60px
+    left: 0
+  &__drink
+    position: absolute
+    top: 300px
+    left: 90px
+  &__plate
+    position: absolute
+    top: 250px
+    right: 0
+.order__form__right__time::-webkit-calendar-picker-indicator,
+.order__form__left__date::-webkit-calendar-picker-indicator
+  opacity: 0
+
+.footer
+  background-image: url('../img/footer_back.png')
+  display: flex
+  flex-direction: column
+  padding: 30px 43px 
+  &__up 
+    margin-top: 62px
+  &__center
+    margin: 48px 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &__text
+      width: 550px
+      font-family: Montserrat
+      font-size: 16.7px
+      line-height: 25px
+      font-weight: 400
+      color: $white
+    &__contacts
+      margin-right: 100px
+      &__address
+        display: flex
+        align-items: center
+        &__img 
+          margin-right: 34px
+        &__txt
+          @include footer__contact
+      &__mail
+        margin-top: 10px
+        display: flex
+        align-items: center
+        &__img 
+          margin-right: 35px
+        &__txt
+          @include footer__contact
+  &__down
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__com
+      margin: 0
+      font-family: 'Bebas Neue'
+      font-size: 16.7px
+      line-height: 1.2
+      color: $white
+    &__soc img:not(:last-child)
+      margin-right: 12px

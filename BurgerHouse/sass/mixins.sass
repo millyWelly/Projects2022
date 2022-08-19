@@ -1,0 +1,54 @@
+@mixin header_delivery
+  font-family: Montserrat
+  font-size: 16.7px
+  line-height: 70px
+  font-weight: 700
+  color: $brown
+
+@mixin hero__head__h($font_size, $line_height)
+  margin: 0
+  font-family: 'Alfa Slab One'
+  font-size: $font_size
+  line-height: $line_height
+  font-weight: 400
+  text-transform: uppercase
+  text-shadow: 4px 5px 0px #fee8bc
+  color: #3d2514
+
+@mixin hero__price
+  margin: 0
+  font-family: 'Bebas Neue'
+  font-size: 69.9px
+  line-height: 37px
+  text-transform: uppercase
+  color: $white
+  
+@mixin menu__head($font_size)
+  margin: 0
+  font-family: 'Bebas Neue'
+  font-size: $font_size
+  line-height: 37px
+  letter-spacing: 4px
+  text-transform: uppercase
+  color: #ffffff
+  text-decoration: none
+
+@mixin footer__contact 
+  margin: 0
+  font-family: 'Bebas Neue'
+  font-size: 20.9px
+  line-height: 37px
+  color: $white
+
+@mixin btn_animation
+  transition: transform .2s ease
+  &:hover
+    transform: scale(1.1, 1.1)
+    cursor: pointer
+  &:focus
+    outline: 3px solid $white
+    outline-offset: -6px
+  &:active
+    cursor: pointer
+    outline: none
+    background-color: #ae0000
