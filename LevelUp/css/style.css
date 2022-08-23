@@ -5,7 +5,7 @@ html {
 body {
   width: 100%;
   margin: 0;
-  background-image: url('/img/back.png');
+  background-image: url('../img/back.png');
   background-size: cover;
 }
 
@@ -146,7 +146,7 @@ section {
 .consist__blocks__block__img {
   width: 180px;
   height: 180px;
-  background-image: url('/img/round.png');
+  background-image: url('../img/round.png');
   background-size: cover;
 }
 
@@ -268,7 +268,7 @@ section {
 
 .promo__char__list {
   padding: 0;
-  list-style-image: url('/img/marker.svg');
+  list-style-image: url('../img/marker.svg');
 }
 
 .promo__char__list__elem:not(:last-child) {
