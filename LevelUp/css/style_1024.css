@@ -1,0 +1,105 @@
+/* 1024 */
+
+@media (max-width: 1024px) {
+
+  .my_container {
+    max-width: 980px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 551.25px;
+  }
+
+  .hero__product {
+    padding: 10px 20px;
+  }
+
+  .hero__product__img {
+    height: 300px;
+  }
+
+  .hero__product__text {
+    max-width: 450px;
+  }
+
+  .hero__product__list {
+    width: 500px;
+    height: 230px;
+  }
+
+  .hero__product__list__elem {
+    font-size: 32px;
+  }
+
+  .order_btn {
+    margin-top: 30px;
+  }
+
+  /* REVIEW */
+
+  .carousel-inner {
+    width: 600px;
+  }
+
+  .review__blocks {
+    gap: 10px;
+  }
+
+  .review__block {
+    max-width: 180px;
+  }
+
+  /* PROMO */
+
+  .promo__descr__img {
+    height: 400px;
+    margin-right: 20px;
+  }
+
+  .promo__descr__text {
+    font-size: 28px;
+  }
+
+  .promo__char {
+    margin-top: 50px;
+  }
+
+  /* ORDER */
+
+  .countdown {
+    margin: 20px 0 50px;
+  }
+
+  .order__info {
+    justify-content: space-around;
+  }
+
+  .order__product__img {
+    height: 300px;
+  }
+
+  .order__product__new_price {
+    font-size: 78px;
+  }
+
+  .order__product__old_price {
+    margin-top: 40px;
+    font-size: 58px;
+  }
+
+  .order_form_block input {
+    width: 400px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .order__form__btn {
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+
+}

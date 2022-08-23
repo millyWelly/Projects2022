@@ -1,0 +1,181 @@
+/* 468 */
+
+@media (max-width: 468px) {
+
+  .my_container {
+    max-width: 450px;
+  }
+
+  /* HERO */
+
+  .head {
+    padding: 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  /* CONSIST */
+
+  .consist_content__blocks {
+    flex-direction: column;
+  }
+
+  .consist__blocks {
+    min-height: 500px;
+  }
+
+  .consist__order_btn_2 {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .consist__blocks__block__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .consist__blocks__block__description {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  /* REVIEW */
+
+  .review {
+    margin-top: 80px;
+  }
+
+  .carousel-inner {
+    width: 240px;
+  }
+
+  .carousel-indicators {
+    top: -20px;
+  }
+
+  .carousel-indicators li {
+    height: 2px;
+    width: 10px;
+  }
+
+  .review__blocks {
+    gap: 2px;
+  }
+
+  .review__block {
+    max-width: 70px;
+    min-height: 100px;
+    padding: 10px 6px;
+  }
+
+  .review__block__human {
+    width: 40px;
+  }
+
+  .review__block__name {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .review__block__text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* PROMO */
+
+  .promo {
+    margin-top: -70px;
+  }
+
+  .promo__descr__img {
+    height: 120px;
+    margin-right: 10px;
+  }
+
+  .promo__descr__text {
+    font-size: 14px;
+  }
+
+  .promo__char {
+    margin-top: 50px;
+    padding-left: 40px;
+  }
+
+  .promo__char__list__elem {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  /* ORDER */
+
+  .order {
+    margin-top: 50px;
+  }
+
+  .order__head__name {
+    padding: 0;
+  }
+
+  .countdown {
+    margin: 20px 0 50px;
+    width: 180px;
+  }
+
+  .countdown-number {
+    min-width: 60px;
+    height: 50px;
+  }
+
+  .countdown-time {
+    font-size: 36px;
+  }
+
+  .symbol {
+    font-size: 36px;
+  }
+
+  .order__product__img {
+    height: 130px;
+  }
+
+  .order__product__new_price {
+    font-size: 30px;
+  }
+
+  .order__product__old_price {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-decoration: line-through rgb(0, 165, 22) 2px;
+  }
+
+  .order_form_block input {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .order_form_block input:focus {
+    outline: 2px solid hsla(0, 0%, 100%, 0.466);
+  }
+
+  .order__form__btn {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .order__form__name_label,
+  .order__form__tel_label {
+    right: 10px;
+    font-size: 9px;
+    line-height: 10px;
+}
+
+}
